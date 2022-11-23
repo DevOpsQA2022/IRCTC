@@ -12,7 +12,7 @@ pipeline {
 //       #!/bin/sh
 //       flutter build apk 
 //     '''             
-                sh "flutter build"
+                sh "flutter build apk"
                 echo "successfully build"
                 
             }
