@@ -8,7 +8,7 @@ pipeline {
             steps {
                sh '''
       #!/bin/sh
-      flutter build apk --debug
+      flutter build apk 
     '''             
                 echo "successfully build"
                 
