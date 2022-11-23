@@ -8,10 +8,11 @@ pipeline {
             steps {
                 sh "flutter clean"
                 sh "flutter pub get"
-               sh '''
-      #!/bin/sh
-      flutter build apk 
-    '''             
+//                sh '''
+//       #!/bin/sh
+//       flutter build apk 
+//     '''             
+                sh "flutter build"
                 echo "successfully build"
                 
             }
