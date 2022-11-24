@@ -273,8 +273,7 @@ class ManPowerUpdateScreen extends StatelessWidget {
                                         //     str.toString();
                                       },
                                       options:controller.trainName,
-                                      labelText:
-                                      MyString.trainNumber,
+                                      //labelText:MyString.trainNumber,
                                       controller: controller.dropdownEditingController,
                                       dropdownHeight: 220,
 
