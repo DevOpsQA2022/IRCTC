@@ -398,7 +398,7 @@ class LiveStatusUpdateScreen extends StatelessWidget {
                                           //     str.toString();
                                         },
                                         options: controller.stationName,
-                                        labelText: MyString.stationName,
+                                        //labelText: MyString.stationName,
                                         controller: controller
                                             .dropdownEditingController,
                                         dropdownHeight: 220,
