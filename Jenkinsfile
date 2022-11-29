@@ -2,6 +2,7 @@ pipeline {
     agent any
      tools{
       gradle 'gradle'
+      flutter 'FLUTTER_HOME'
     }
     stages {
         stage('Build') {              
