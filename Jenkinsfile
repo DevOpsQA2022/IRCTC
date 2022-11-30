@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {   
              environment {
-                      flutter = "C:\flutter\bin"
+                      flutter 'FLUTTER_HOME'
              }
             steps {
                 sh "flutter clean"
