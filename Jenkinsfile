@@ -4,7 +4,10 @@ pipeline {
       gradle 'gradle'    
     }
     stages {
-        stage('Build') {              
+        stage('Build') {   
+             environment {
+                      flutter = "C:\flutter\bin"
+             }
             steps {
                 sh "flutter clean"
                 sh "flutter pub get"
