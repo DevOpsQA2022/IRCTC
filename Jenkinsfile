@@ -4,10 +4,7 @@ pipeline {
       gradle 'gradle'    
     }
     stages {
-        stage('Build') {   
-             environment {
-                      flutter 'FLUTTER_HOME'
-             }
+        stage('Build') { 
             steps {
                 sh "flutter clean"
                 sh "flutter pub get"
