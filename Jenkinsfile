@@ -6,6 +6,11 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
+                environment {
+
+                          PATH = "C:\\WINDOWS\\SYSTEM32"
+
+}
 //                 sh "flutter clean"
 //                 sh "flutter pub get"
                 bat "flutter clean"
