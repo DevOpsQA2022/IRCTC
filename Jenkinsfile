@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh "flutter clean"
-                sh "flutter pub get"
-//                sh '''
-//       #!/bin/sh
-//       flutter build apk 
-//     '''             
+//                 sh "flutter clean"
+//                 sh "flutter pub get"
+                bat "flutter clean"
+               bat "flutter pub get"
+                
+           
                 sh "flutter build apk --debug"
                 echo "successfully build"
                 
