@@ -6,7 +6,6 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                #!/bin/bash
                 sh "flutter clean"
                 sh "flutter pub get"
 //                sh '''
