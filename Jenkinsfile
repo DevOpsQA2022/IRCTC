@@ -3,9 +3,15 @@ pipeline {
      tools{
       gradle 'gradle'    
     }
-    
+  
     stages {
         stage('Build') { 
+            steps {
+                withEnv(["PATH+FLUTTER=FLUTTER_PATH"]) {
+                    echo "PATH is: C:\flutter\bin"
+                    sh 'flutter'
+                }
+            }
             steps {
                 sh "flutter"
                 
