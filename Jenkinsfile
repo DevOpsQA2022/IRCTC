@@ -3,9 +3,12 @@ pipeline {
      tools{
       gradle 'gradle'    
     }
+    
     stages {
         stage('Build') { 
             steps {
+                sh "flutter"
+                
               
 //                 sh "flutter clean"
 //                 sh "flutter pub get"
@@ -13,7 +16,7 @@ pipeline {
 //                bat "flutter pub get"
                 
            
-                bat "flutter build apk --debug"
+                sh "flutter build apk --debug"
                 echo "successfully build"
                 
             }
