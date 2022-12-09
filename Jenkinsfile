@@ -9,11 +9,11 @@ pipeline {
               
 //                 sh "flutter clean"
 //                 sh "flutter pub get"
-                bat "flutter clean"
-               bat "flutter pub get"
+//                 bat "flutter clean"
+//                bat "flutter pub get"
                 
            
-                sh "flutter build apk --debug"
+                bat "flutter build apk --debug"
                 echo "successfully build"
                 
             }
