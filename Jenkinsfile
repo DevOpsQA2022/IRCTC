@@ -5,19 +5,9 @@ pipeline {
     }
   
     stages {
-        stage('Build') { 
-            steps {
-                withEnv(["PATH+FLUTTER=FLUTTER_PATH"]) {
-                    echo "PATH is: C:\flutter\bin"
-                    sh 'flutter'
-                }
-            }
+        stage('Build') {
             steps {
                 sh "flutter"
-                
-              
-//                 sh "flutter clean"
-//                 sh "flutter pub get"
 //                 bat "flutter clean"
 //                bat "flutter pub get"
                 
