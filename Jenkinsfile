@@ -12,7 +12,7 @@ pipeline {
                bat "flutter pub get"
                 
            
-                sh "flutter build apk --debug"
+                bat "flutter build apk --debug"
                 echo "successfully build"
                 
             }
