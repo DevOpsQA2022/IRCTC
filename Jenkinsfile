@@ -7,9 +7,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh "flutter"
-//                 bat "flutter clean"
-//                bat "flutter pub get"
+                //sh "flutter"
+                bat "flutter clean"
+               bat "flutter pub get"
                 
            
                 sh "flutter build apk --debug"
